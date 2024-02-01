@@ -62,6 +62,34 @@ public class ProductDB {
             myMusic.setLabel("the Columbia group");
             someItem=myMusic;
         }
+        else if (productCode.equalsIgnoreCase("Beatles")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Hey Jude");
+            myMusic.setPrice(25);
+            myMusic.setArtist("The Beatles");
+            myMusic.setLabel("the Apple Records");
+            someItem=myMusic;
+        }
+        else if (productCode.equalsIgnoreCase("ABBA")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Dancing Queen");
+            myMusic.setPrice(25);
+            myMusic.setArtist("ABBA");
+            myMusic.setLabel("the AMIGA");
+            someItem=myMusic;
+        }
+        if(productCode.equalsIgnoreCase("kdl43"))
+        {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SONY BRAVIA SMART TV KDL43WF663");
+            myTV.setPrice(819);
+            myTV.setManufacture("SONY");
+            myTV.setScreenSize("55'");
+            someItem=myTV;
+        }
         return someItem;
     }
 
